@@ -1,0 +1,89 @@
+﻿{%extends 'base.html' %}
+ <!-- PRESENTATION AREA -->
+{% block content %}
+
+ {% load static %}
+
+
+ <!-- SUBHEADER AREA -->
+        
+        <div class="pm-sub-header-container pm-parallax-panel" data-stellar-background-ratio="0.5" data-stellar-vertical-offset="95">
+        	
+            <div class="pm-sub-header-breadcrumbs">
+            	<ul class="pm-sub-header-breadcrumbs-ul">
+                	<li><a href="#">Home</a></li>
+                    <li><i class="fa fa-angle-right"></i></li>
+                    <li class="current">courses</li>
+                </ul>
+            </div>
+            
+            <div class="pm-sub-header-title-container">
+            	<h5>Courses</h5>
+            </div>
+            
+            <div class="pm-sub-header-message">
+            	<p>Our online courses are taught by leading industry professionals</p>
+            </div>
+                        
+        </div>
+        
+ 		<!-- SUBHEADER AREA end -->
+        
+        <!-- BODY AREA -->
+        
+        <div class="container pm-containerPadding60">
+        	<div class="row">
+            	{% for course in object_list %}
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                	
+                    <!-- Course post -->
+                    <div class="pm-course-post-container">
+                    	
+                        <div class="pm-course-post-title-box">
+                        	<p>{{ course.course_name }}</p>
+                            <i class="fa fa-laptop"></i>
+                        </div>
+                        
+                        <div class="pm-course-post-details">
+                        	<p >{{course.short_description}}<a href="{% url 'course' course.pk %}">[...]</a></p>
+                        </div>
+                        
+                        <a href="{% url 'course' course.pk %}" class="pm-course-post-button">
+                        	Full Details and Pricing info
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                        
+                    </div>
+                    <!-- Course post end -->
+                    
+                </div>
+                
+              {% endfor %}
+                
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+<style>
+    
+</style>
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-80057807-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+
+{% endblock content %}

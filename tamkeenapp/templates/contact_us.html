@@ -1,0 +1,114 @@
+﻿{% extends 'base.html'%}
+{% block content %}
+{% load static%}
+
+
+ <!-- SUBHEADER AREA -->
+        
+        <div class="pm-sub-header-container pm-parallax-panel" data-stellar-background-ratio="0.5" data-stellar-vertical-offset="95">
+        	
+            <div class="pm-sub-header-breadcrumbs">
+            	<ul class="pm-sub-header-breadcrumbs-ul">
+                	<li><a href="#">Home</a></li>
+                    <li><i class="fa fa-angle-right"></i></li>
+                    <li class="current">Contact us</li>
+                </ul>
+            </div>
+            
+            <div class="pm-sub-header-title-container">
+            	<h5>Contact Us</h5>
+            </div>
+            
+            <div class="pm-sub-header-message">
+            	<p>Have a question? We have the answer</p>
+            </div>
+                        
+        </div>
+        
+ 		<!-- SUBHEADER AREA end -->
+        
+        <!-- BODY AREA -->
+        
+       
+        
+        <div class="container pm-containerPadding-bottom-40">
+        	<div class="row">
+            	
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                	<h5 class="pm-primary">Reach us by email or phone</h5>
+                    <p><strong>General Inquiries:</strong> +2-0111-229-7719</p>
+                    <p><strong>Support Line:</strong>+2-0100-650-4323</p>
+                    <p><strong>Email:</strong> <a href="mailto:info@tamkeen-4st.com">info@tamkeen-4st.com</a></p>
+                </div>
+                
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                	 <h6>Commercial Branch:</h6>
+                            <p>
+                                Smart-Village, Building (B5). Cairo-Alexandria Desert Road Giza, Egypt <br />
+                                P.O. Box: 12577
+                            </p>
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="container pm-containerPadding-bottom-60">
+        	<div class="row">
+            	<div class="col-lg-12">
+                	<h5 class="pm-primary">Send us an inquiry</h5>
+                    <div class="pm-contact-form-container">
+                          {% if errors %}
+                           <ul>
+                          {% for error in errors %}
+                         <li>{{ error }}</li>
+                            {% endfor %}
+                          </ul>
+                            {% endif %}
+                        {% if  result%}
+                        <p> {{result}}</p>
+                         {% endif %}
+                    	<p class="pm-required">Your email address will be held strictly confidential. Required fields are marked *</p>
+                    	<form id="pm-contact-form" action="" method="post">
+                              {% csrf_token %}
+                            <input name="name" id="pm_s_full_name" type="text" placeholder="Name *" class="pm-form-textfield">
+                            <input name="email" id="pm_s_email_address" type="text" placeholder="Email *" class="pm-form-textfield">
+                            <input name="subject" id="pm_s_subject" type="text" placeholder="Subject *" class="pm-form-textfield">
+                            <textarea name="message" id="pm_s_message" cols="20" rows="6" placeholder="Inquiry *" class="pm-form-textarea"></textarea>
+                           
+                            <div id="pm-contact-form-response"></div>
+                            <input type="submit" class="pm-rounded-submit-btn"  value="Submit" id="pm-contact-form-btn" />
+                            <input type="hidden" value="pm-contact-form-submitted" />
+                            <input type="hidden" name="pm_s_email_address_contact" value="leo@pulsarmedia.ca" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- BODY AREA end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock content %}
+
+  {% block extrajs %}
+
+
+  {% endblock extrajs %}

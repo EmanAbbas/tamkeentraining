@@ -1,0 +1,703 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Name>TamkeenDjango</Name>
+    <RootNamespace>TamkeenDjango</RootNamespace>
+    <InterpreterId>{191bacbf-4210-4e87-b10f-e7c929b19379}</InterpreterId>
+    <InterpreterVersion>2.7</InterpreterVersion>
+    <NameOfLastUsedPublishProfile>tamkeen2 - Web Deploy</NameOfLastUsedPublishProfile>
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>556ad744-ae5e-4710-89f6-3e79d45454ce</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectTypeGuids>{5F0BE9CA-D677-4A4D-8806-6076C0FAAD37};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>manage.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <LaunchProvider>Django launcher</LaunchProvider>
+    <DjangoSettingsModule>TamkeenDjango.settings</DjangoSettingsModule>
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="manage.py" />
+    <Compile Include="tamkeenapp\admin.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tamkeenapp\context_processors.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tamkeenapp\models.py" />
+    <Compile Include="tamkeenapp\tests.py" />
+    <Compile Include="tamkeenapp\urls.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tamkeenapp\views.py" />
+    <Compile Include="tamkeenapp\__init__.py" />
+    <Compile Include="TamkeenDjango\__init__.py" />
+    <Compile Include="TamkeenDjango\settings.py" />
+    <Compile Include="TamkeenDjango\urls.py" />
+    <Compile Include="TamkeenDjango\wsgi.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="db.sqlite3" />
+    <Content Include="Procfile" />
+    <Content Include="requirements.txt" />
+    <Content Include="tamkeenapp\templates\workshopdetails.html" />
+    <Content Include="web.config" />
+    <None Include="tamkeen2 - Web Deploy.pubxml" />
+    <None Include="tamkeen2 - FTP.pubxml" />
+    <Content Include="tamkeenapp\static\bootstrap3\css\bootstrap-theme.css" />
+    <Content Include="tamkeenapp\static\bootstrap3\css\bootstrap-theme.min.css" />
+    <Content Include="tamkeenapp\static\bootstrap3\css\bootstrap.css" />
+    <Content Include="tamkeenapp\static\bootstrap3\css\bootstrap.min.css" />
+    <Content Include="tamkeenapp\static\bootstrap3\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="tamkeenapp\static\bootstrap3\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="tamkeenapp\static\bootstrap3\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="tamkeenapp\static\bootstrap3\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="tamkeenapp\static\bootstrap3\js\bootstrap.js" />
+    <Content Include="tamkeenapp\static\bootstrap3\js\bootstrap.min.js" />
+    <Content Include="tamkeenapp\static\css\btn.css" />
+    <Content Include="tamkeenapp\static\css\carousel.css" />
+    <Content Include="tamkeenapp\static\css\comments.css" />
+    <Content Include="tamkeenapp\static\css\font-awesome.css" />
+    <Content Include="tamkeenapp\static\css\font-awesome.min.css" />
+    <Content Include="tamkeenapp\static\css\forms.css" />
+    <Content Include="tamkeenapp\static\css\img\arrows-ffffff-orange.png" />
+    <Content Include="tamkeenapp\static\css\img\avatar-large.png" />
+    <Content Include="tamkeenapp\static\css\img\background-lines.png" />
+    <Content Include="tamkeenapp\static\css\img\bg_direction_nav.ORIGINAL.png" />
+    <Content Include="tamkeenapp\static\css\img\bg_direction_nav.png" />
+    <Content Include="tamkeenapp\static\css\img\bg_direction_nav2.png" />
+    <Content Include="tamkeenapp\static\css\img\bg_direction_nav_black.png" />
+    <Content Include="tamkeenapp\static\css\img\bg_direction_nav_grey.png" />
+    <Content Include="tamkeenapp\static\css\img\button-next.png" />
+    <Content Include="tamkeenapp\static\css\img\button-previous.png" />
+    <Content Include="tamkeenapp\static\css\img\comment-box-reply.jpg" />
+    <Content Include="tamkeenapp\static\css\img\comment-box.jpg" />
+    <Content Include="tamkeenapp\static\css\img\date.png" />
+    <Content Include="tamkeenapp\static\css\img\header-bg.jpg" />
+    <Content Include="tamkeenapp\static\css\img\header-bg.png" />
+    <Content Include="tamkeenapp\static\css\img\progress.jpg" />
+    <Content Include="tamkeenapp\static\css\img\twitter_icon.png" />
+    <Content Include="tamkeenapp\static\css\img\ul-arrow.png" />
+    <Content Include="tamkeenapp\static\css\img\up-green.png" />
+    <Content Include="tamkeenapp\static\css\img\up-grey.png" />
+    <Content Include="tamkeenapp\static\css\img\up.png" />
+    <Content Include="tamkeenapp\static\css\main.css" />
+    <Content Include="tamkeenapp\static\css\members.css" />
+    <Content Include="tamkeenapp\static\css\pulse-carousel.css" />
+    <Content Include="tamkeenapp\static\css\responsive.css" />
+    <Content Include="tamkeenapp\static\css\superfish\img\arrows-blue.png" />
+    <Content Include="tamkeenapp\static\css\superfish\img\arrows-ffffff.png" />
+    <Content Include="tamkeenapp\static\css\superfish\img\subArrow.png" />
+    <Content Include="tamkeenapp\static\css\superfish\superfish-navbar.css" />
+    <Content Include="tamkeenapp\static\css\superfish\superfish-vertical.css" />
+    <Content Include="tamkeenapp\static\css\superfish\superfish.css" />
+    <Content Include="tamkeenapp\static\css\twitterfeed.css" />
+    <Content Include="tamkeenapp\static\css\typicons\typicons.eot" />
+    <Content Include="tamkeenapp\static\css\typicons\typicons.min.css" />
+    <Content Include="tamkeenapp\static\css\typicons\typicons.svg" />
+    <Content Include="tamkeenapp\static\css\typicons\typicons.ttf" />
+    <Content Include="tamkeenapp\static\css\typicons\typicons.woff" />
+    <Content Include="tamkeenapp\static\fonts\fontawesome-webfont.eot" />
+    <Content Include="tamkeenapp\static\fonts\fontawesome-webfont.svg" />
+    <Content Include="tamkeenapp\static\fonts\fontawesome-webfont.ttf" />
+    <Content Include="tamkeenapp\static\fonts\fontawesome-webfont.woff" />
+    <Content Include="tamkeenapp\static\fonts\FontAwesome.otf" />
+    <Content Include="tamkeenapp\static\img\about-us\01_icon.jpg" />
+    <Content Include="tamkeenapp\static\img\about-us\02_icon.jpg" />
+    <Content Include="tamkeenapp\static\img\about-us\03_icon.jpg" />
+    <Content Include="tamkeenapp\static\img\blog\01_avatar.jpg" />
+    <Content Include="tamkeenapp\static\img\blog\01_post.jpg" />
+    <Content Include="tamkeenapp\static\img\blog\02_avatar.jpg" />
+    <Content Include="tamkeenapp\static\img\blog\02_post.jpg" />
+    <Content Include="tamkeenapp\static\img\blog\03_avatar.jpg" />
+    <Content Include="tamkeenapp\static\img\blog\03_post.jpg" />
+    <Content Include="tamkeenapp\static\img\blog\04_avatar.jpg" />
+    <Content Include="tamkeenapp\static\img\blog\04_post.jpg" />
+    <Content Include="tamkeenapp\static\img\blog\05_post.jpg" />
+    <Content Include="tamkeenapp\static\img\boxed-bgs\01_bg.jpg" />
+    <Content Include="tamkeenapp\static\img\boxed-bgs\01_bg_thumb.jpg" />
+    <Content Include="tamkeenapp\static\img\boxed-bgs\02_bg.jpg" />
+    <Content Include="tamkeenapp\static\img\boxed-bgs\02_bg_thumb.jpg" />
+    <Content Include="tamkeenapp\static\img\boxed-bgs\03_bg.jpg" />
+    <Content Include="tamkeenapp\static\img\boxed-bgs\03_bg_thumb.jpg" />
+    <Content Include="tamkeenapp\static\img\boxed-bgs\04_bg.jpg" />
+    <Content Include="tamkeenapp\static\img\boxed-bgs\04_bg_thumb.jpg" />
+    <Content Include="tamkeenapp\static\img\boxed-bgs\05_bg.jpg" />
+    <Content Include="tamkeenapp\static\img\boxed-bgs\05_bg_thumb.jpg" />
+    <Content Include="tamkeenapp\static\img\boxed-patterns\01_pattern.png" />
+    <Content Include="tamkeenapp\static\img\boxed-patterns\02_pattern.png" />
+    <Content Include="tamkeenapp\static\img\boxed-patterns\03_pattern.png" />
+    <Content Include="tamkeenapp\static\img\boxed-patterns\04_pattern.png" />
+    <Content Include="tamkeenapp\static\img\boxed-patterns\05_pattern.png" />
+    <Content Include="tamkeenapp\static\img\boxed-patterns\06_pattern.png" />
+    <Content Include="tamkeenapp\static\img\home\01_bio_pic.jpg" />
+    <Content Include="tamkeenapp\static\img\home\01_service_icon.png" />
+    <Content Include="tamkeenapp\static\img\home\02_bio_pic.jpg" />
+    <Content Include="tamkeenapp\static\img\home\02_service_icon.png" />
+    <Content Include="tamkeenapp\static\img\home\03_bio_pic.jpg" />
+    <Content Include="tamkeenapp\static\img\home\03_service_icon.png" />
+    <Content Include="tamkeenapp\static\img\home\04_bio_pic.jpg" />
+    <Content Include="tamkeenapp\static\img\home\05_bio_pic.jpg" />
+    <Content Include="tamkeenapp\static\img\home\06_bio_pic.jpg" />
+    <Content Include="tamkeenapp\static\img\home\man-icon.png" />
+    <Content Include="tamkeenapp\static\img\home\newsletter-background.jpg" />
+    <Content Include="tamkeenapp\static\img\home\partners\01_partner.jpg" />
+    <Content Include="tamkeenapp\static\img\home\partners\02_partner.jpg" />
+    <Content Include="tamkeenapp\static\img\home\partners\03_partner.jpg" />
+    <Content Include="tamkeenapp\static\img\home\partners\04_partner.jpg" />
+    <Content Include="tamkeenapp\static\img\home\partners\05_partner.jpg" />
+    <Content Include="tamkeenapp\static\img\home\partners\header_CMMI_institute_logo_full.png" />
+    <Content Include="tamkeenapp\static\img\home\partners\isaca.jpg" />
+    <Content Include="tamkeenapp\static\img\home\partners\iso-logo.png" />
+    <Content Include="tamkeenapp\static\img\home\partners\ITIL-logo.png" />
+    <Content Include="tamkeenapp\static\img\home\partners\pceb_logo.png" />
+    <Content Include="tamkeenapp\static\img\home\partners\PECB-logo.png" />
+    <Content Include="tamkeenapp\static\img\home\presentation_background.jpg" />
+    <Content Include="tamkeenapp\static\img\home\stats-background.jpg" />
+    <Content Include="tamkeenapp\static\img\home\stats-triangle.png" />
+    <Content Include="tamkeenapp\static\img\home\testimonials\01_profile.jpg" />
+    <Content Include="tamkeenapp\static\img\home\testimonials\02_profile.jpg" />
+    <Content Include="tamkeenapp\static\img\posts\01_post.jpg" />
+    <Content Include="tamkeenapp\static\img\posts\02_post.jpg" />
+    <Content Include="tamkeenapp\static\img\posts\03_post.jpg" />
+    <Content Include="tamkeenapp\static\img\posts\04_post.jpg" />
+    <Content Include="tamkeenapp\static\img\posts\05_post.jpg" />
+    <Content Include="tamkeenapp\static\img\quantum-footer.png" />
+    <Content Include="tamkeenapp\static\img\quantum-wordpress-theme.jpg" />
+    <Content Include="tamkeenapp\static\img\services\01_collaboration.jpg" />
+    <Content Include="tamkeenapp\static\img\services\01_panel-bg.jpg" />
+    <Content Include="tamkeenapp\static\img\services\02_panel-bg.jpg" />
+    <Content Include="tamkeenapp\static\img\tamkeen_logo.jpg" />
+    <Content Include="tamkeenapp\static\img\tamkeen_logo.png" />
+    <Content Include="tamkeenapp\static\img\widget-title-divider.jpg" />
+    <Content Include="tamkeenapp\static\js\ajax-contact\ajax-email.js" />
+    <Content Include="tamkeenapp\static\js\ajax-contact\CaptchaSecurityImages.php" />
+    <Content Include="tamkeenapp\static\js\ajax-contact\class.phpmail.php" />
+    <Content Include="tamkeenapp\static\js\ajax-contact\monofont.ttf" />
+    <Content Include="tamkeenapp\static\js\ajax-contact\send_email.php" />
+    <Content Include="tamkeenapp\static\js\countdown\countdown.js" />
+    <Content Include="tamkeenapp\static\js\easypiechart\jquery.easypiechart.min.js" />
+    <Content Include="tamkeenapp\static\js\flexisel\flexisel.css" />
+    <Content Include="tamkeenapp\static\js\flexisel\jquery.flexisel.js" />
+    <Content Include="tamkeenapp\static\js\flexslider\flexslider-post.css" />
+    <Content Include="tamkeenapp\static\js\flexslider\flexslider.css" />
+    <Content Include="tamkeenapp\static\js\flexslider\img\bg_direction_nav.ORIGINAL.png" />
+    <Content Include="tamkeenapp\static\js\flexslider\img\bg_direction_nav.png" />
+    <Content Include="tamkeenapp\static\js\flexslider\img\bg_direction_nav2.png" />
+    <Content Include="tamkeenapp\static\js\flexslider\img\bg_direction_nav_black.png" />
+    <Content Include="tamkeenapp\static\js\flexslider\img\bg_direction_nav_grey.png" />
+    <Content Include="tamkeenapp\static\js\flexslider\img\bg_direction_nav_white.png" />
+    <Content Include="tamkeenapp\static\js\flexslider\img\button-next.png" />
+    <Content Include="tamkeenapp\static\js\flexslider\img\button-previous.png" />
+    <Content Include="tamkeenapp\static\js\flexslider\jquery.flexslider-min.js" />
+    <Content Include="tamkeenapp\static\js\flexslider\jquery.flexslider.js" />
+    <Content Include="tamkeenapp\static\js\iris\color.min.js" />
+    <Content Include="tamkeenapp\static\js\iris\iris.css" />
+    <Content Include="tamkeenapp\static\js\iris\iris.js" />
+    <Content Include="tamkeenapp\static\js\iris\iris.min.css" />
+    <Content Include="tamkeenapp\static\js\iris\iris.min.js" />
+    <Content Include="tamkeenapp\static\js\isotope\isotope.css" />
+    <Content Include="tamkeenapp\static\js\isotope\jquery.isotope.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-2.1.1.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-migrate-1.1.1.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\AUTHORS.txt" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\Gruntfile.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\jquery-1.9.1.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\MANIFEST" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\MIT-LICENSE.txt" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\package.json" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\README.md" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui.accordion.jquery.json" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui.autocomplete.jquery.json" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui.button.jquery.json" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui.core.jquery.json" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui.datepicker.jquery.json" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui.dialog.jquery.json" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui.draggable.jquery.json" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui.droppable.jquery.json" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui.effect-blind.jquery.json" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui.effect-bounce.jquery.json" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui.effect-clip.jquery.json" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui.effect-drop.jquery.json" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui.effect-explode.jquery.json" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui.effect-fade.jquery.json" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui.effect-fold.jquery.json" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui.effect-highlight.jquery.json" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui.effect-pulsate.jquery.json" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui.effect-scale.jquery.json" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui.effect-shake.jquery.json" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui.effect-slide.jquery.json" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui.effect-transfer.jquery.json" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui.effect.jquery.json" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui.menu.jquery.json" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui.mouse.jquery.json" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui.position.jquery.json" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui.progressbar.jquery.json" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui.resizable.jquery.json" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui.selectable.jquery.json" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui.slider.jquery.json" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui.sortable.jquery.json" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui.spinner.jquery.json" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui.tabs.jquery.json" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui.tooltip.jquery.json" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui.widget.jquery.json" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\.jshintrc" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\i18n\jquery-ui-i18n.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\i18n\jquery.ui.datepicker-af.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\i18n\jquery.ui.datepicker-ar-DZ.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\i18n\jquery.ui.datepicker-ar.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\i18n\jquery.ui.datepicker-az.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\i18n\jquery.ui.datepicker-be.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\i18n\jquery.ui.datepicker-bg.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\i18n\jquery.ui.datepicker-bs.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\i18n\jquery.ui.datepicker-ca.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\i18n\jquery.ui.datepicker-cs.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\i18n\jquery.ui.datepicker-cy-GB.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\i18n\jquery.ui.datepicker-da.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\i18n\jquery.ui.datepicker-de.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\i18n\jquery.ui.datepicker-el.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\i18n\jquery.ui.datepicker-en-AU.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\i18n\jquery.ui.datepicker-en-GB.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\i18n\jquery.ui.datepicker-en-NZ.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\i18n\jquery.ui.datepicker-eo.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\i18n\jquery.ui.datepicker-es.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\i18n\jquery.ui.datepicker-et.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\i18n\jquery.ui.datepicker-eu.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\i18n\jquery.ui.datepicker-fa.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\i18n\jquery.ui.datepicker-fi.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\i18n\jquery.ui.datepicker-fo.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\i18n\jquery.ui.datepicker-fr-CA.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\i18n\jquery.ui.datepicker-fr-CH.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\i18n\jquery.ui.datepicker-fr.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\i18n\jquery.ui.datepicker-gl.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\i18n\jquery.ui.datepicker-he.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\i18n\jquery.ui.datepicker-hi.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\i18n\jquery.ui.datepicker-hr.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\i18n\jquery.ui.datepicker-hu.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\i18n\jquery.ui.datepicker-hy.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\i18n\jquery.ui.datepicker-id.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\i18n\jquery.ui.datepicker-is.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\i18n\jquery.ui.datepicker-it.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\i18n\jquery.ui.datepicker-ja.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\i18n\jquery.ui.datepicker-ka.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\i18n\jquery.ui.datepicker-kk.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\i18n\jquery.ui.datepicker-km.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\i18n\jquery.ui.datepicker-ko.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\i18n\jquery.ui.datepicker-ky.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\i18n\jquery.ui.datepicker-lb.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\i18n\jquery.ui.datepicker-lt.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\i18n\jquery.ui.datepicker-lv.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\i18n\jquery.ui.datepicker-mk.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\i18n\jquery.ui.datepicker-ml.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\i18n\jquery.ui.datepicker-ms.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\i18n\jquery.ui.datepicker-nb.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\i18n\jquery.ui.datepicker-nl-BE.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\i18n\jquery.ui.datepicker-nl.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\i18n\jquery.ui.datepicker-nn.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\i18n\jquery.ui.datepicker-no.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\i18n\jquery.ui.datepicker-pl.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\i18n\jquery.ui.datepicker-pt-BR.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\i18n\jquery.ui.datepicker-pt.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\i18n\jquery.ui.datepicker-rm.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\i18n\jquery.ui.datepicker-ro.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\i18n\jquery.ui.datepicker-ru.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\i18n\jquery.ui.datepicker-sk.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\i18n\jquery.ui.datepicker-sl.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\i18n\jquery.ui.datepicker-sq.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\i18n\jquery.ui.datepicker-sr-SR.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\i18n\jquery.ui.datepicker-sr.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\i18n\jquery.ui.datepicker-sv.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\i18n\jquery.ui.datepicker-ta.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\i18n\jquery.ui.datepicker-th.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\i18n\jquery.ui.datepicker-tj.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\i18n\jquery.ui.datepicker-tr.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\i18n\jquery.ui.datepicker-uk.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\i18n\jquery.ui.datepicker-vi.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\i18n\jquery.ui.datepicker-zh-CN.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\i18n\jquery.ui.datepicker-zh-HK.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\i18n\jquery.ui.datepicker-zh-TW.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\jquery-ui.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\jquery.ui.accordion.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\jquery.ui.accordion.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\jquery.ui.autocomplete.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\jquery.ui.button.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\jquery.ui.core.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\jquery.ui.datepicker.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\jquery.ui.dialog.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\jquery.ui.draggable.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\jquery.ui.droppable.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\jquery.ui.effect-blind.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\jquery.ui.effect-bounce.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\jquery.ui.effect-clip.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\jquery.ui.effect-drop.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\jquery.ui.effect-explode.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\jquery.ui.effect-fade.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\jquery.ui.effect-fold.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\jquery.ui.effect-highlight.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\jquery.ui.effect-pulsate.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\jquery.ui.effect-scale.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\jquery.ui.effect-shake.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\jquery.ui.effect-slide.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\jquery.ui.effect-transfer.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\jquery.ui.effect.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\jquery.ui.menu.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\jquery.ui.mouse.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\jquery.ui.position.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\jquery.ui.progressbar.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\jquery.ui.resizable.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\jquery.ui.selectable.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\jquery.ui.slider.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\jquery.ui.sortable.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\jquery.ui.sortable.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\jquery.ui.spinner.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\jquery.ui.tabs.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\jquery.ui.tooltip.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\jquery.ui.widget.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\jquery.ui.widget.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\i18n\jquery-ui-i18n.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\i18n\jquery.ui.datepicker-af.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\i18n\jquery.ui.datepicker-ar-DZ.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\i18n\jquery.ui.datepicker-ar.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\i18n\jquery.ui.datepicker-az.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\i18n\jquery.ui.datepicker-be.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\i18n\jquery.ui.datepicker-bg.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\i18n\jquery.ui.datepicker-bs.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\i18n\jquery.ui.datepicker-ca.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\i18n\jquery.ui.datepicker-cs.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\i18n\jquery.ui.datepicker-cy-GB.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\i18n\jquery.ui.datepicker-da.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\i18n\jquery.ui.datepicker-de.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\i18n\jquery.ui.datepicker-el.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\i18n\jquery.ui.datepicker-en-AU.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\i18n\jquery.ui.datepicker-en-GB.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\i18n\jquery.ui.datepicker-en-NZ.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\i18n\jquery.ui.datepicker-eo.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\i18n\jquery.ui.datepicker-es.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\i18n\jquery.ui.datepicker-et.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\i18n\jquery.ui.datepicker-eu.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\i18n\jquery.ui.datepicker-fa.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\i18n\jquery.ui.datepicker-fi.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\i18n\jquery.ui.datepicker-fo.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\i18n\jquery.ui.datepicker-fr-CA.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\i18n\jquery.ui.datepicker-fr-CH.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\i18n\jquery.ui.datepicker-fr.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\i18n\jquery.ui.datepicker-gl.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\i18n\jquery.ui.datepicker-he.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\i18n\jquery.ui.datepicker-hi.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\i18n\jquery.ui.datepicker-hr.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\i18n\jquery.ui.datepicker-hu.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\i18n\jquery.ui.datepicker-hy.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\i18n\jquery.ui.datepicker-id.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\i18n\jquery.ui.datepicker-is.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\i18n\jquery.ui.datepicker-it.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\i18n\jquery.ui.datepicker-ja.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\i18n\jquery.ui.datepicker-ka.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\i18n\jquery.ui.datepicker-kk.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\i18n\jquery.ui.datepicker-km.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\i18n\jquery.ui.datepicker-ko.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\i18n\jquery.ui.datepicker-ky.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\i18n\jquery.ui.datepicker-lb.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\i18n\jquery.ui.datepicker-lt.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\i18n\jquery.ui.datepicker-lv.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\i18n\jquery.ui.datepicker-mk.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\i18n\jquery.ui.datepicker-ml.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\i18n\jquery.ui.datepicker-ms.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\i18n\jquery.ui.datepicker-nb.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\i18n\jquery.ui.datepicker-nl-BE.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\i18n\jquery.ui.datepicker-nl.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\i18n\jquery.ui.datepicker-nn.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\i18n\jquery.ui.datepicker-no.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\i18n\jquery.ui.datepicker-pl.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\i18n\jquery.ui.datepicker-pt-BR.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\i18n\jquery.ui.datepicker-pt.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\i18n\jquery.ui.datepicker-rm.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\i18n\jquery.ui.datepicker-ro.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\i18n\jquery.ui.datepicker-ru.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\i18n\jquery.ui.datepicker-sk.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\i18n\jquery.ui.datepicker-sl.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\i18n\jquery.ui.datepicker-sq.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\i18n\jquery.ui.datepicker-sr-SR.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\i18n\jquery.ui.datepicker-sr.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\i18n\jquery.ui.datepicker-sv.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\i18n\jquery.ui.datepicker-ta.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\i18n\jquery.ui.datepicker-th.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\i18n\jquery.ui.datepicker-tj.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\i18n\jquery.ui.datepicker-tr.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\i18n\jquery.ui.datepicker-uk.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\i18n\jquery.ui.datepicker-vi.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\i18n\jquery.ui.datepicker-zh-CN.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\i18n\jquery.ui.datepicker-zh-HK.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\i18n\jquery.ui.datepicker-zh-TW.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\jquery-ui.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\jquery.ui.accordion.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\jquery.ui.autocomplete.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\jquery.ui.button.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\jquery.ui.core.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\jquery.ui.datepicker.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\jquery.ui.dialog.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\jquery.ui.draggable.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\jquery.ui.droppable.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\jquery.ui.effect-blind.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\jquery.ui.effect-bounce.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\jquery.ui.effect-clip.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\jquery.ui.effect-drop.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\jquery.ui.effect-explode.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\jquery.ui.effect-fade.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\jquery.ui.effect-fold.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\jquery.ui.effect-highlight.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\jquery.ui.effect-pulsate.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\jquery.ui.effect-scale.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\jquery.ui.effect-shake.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\jquery.ui.effect-slide.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\jquery.ui.effect-transfer.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\jquery.ui.effect.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\jquery.ui.menu.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\jquery.ui.mouse.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\jquery.ui.position.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\jquery.ui.progressbar.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\jquery.ui.resizable.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\jquery.ui.selectable.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\jquery.ui.slider.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\jquery.ui.sortable.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\jquery.ui.spinner.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\jquery.ui.tabs.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\jquery.ui.tooltip.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery-ui\ui\minified\jquery.ui.widget.min.js" />
+    <Content Include="tamkeenapp\static\js\jquery.carousel.js" />
+    <Content Include="tamkeenapp\static\js\jquery.easing.1.3.js" />
+    <Content Include="tamkeenapp\static\js\jquery.fitvids.js" />
+    <Content Include="tamkeenapp\static\js\jquery.hoverPanel.js" />
+    <Content Include="tamkeenapp\static\js\jquery.js" />
+    <Content Include="tamkeenapp\static\js\jquery.testimonials.js" />
+    <Content Include="tamkeenapp\static\js\jquery.tooltip.js" />
+    <Content Include="tamkeenapp\static\js\jquery.viewport.mini.js" />
+    <Content Include="tamkeenapp\static\js\main.js" />
+    <Content Include="tamkeenapp\static\js\mobilemenu\jquery.dlmenu.js" />
+    <Content Include="tamkeenapp\static\js\mobilemenu\mobilemenu.css" />
+    <Content Include="tamkeenapp\static\js\mobilemenu\modernizr.custom.js" />
+    <Content Include="tamkeenapp\static\js\modernizr.custom.js" />
+    <Content Include="tamkeenapp\static\js\owl-carousel\.DS_Store" />
+    <Content Include="tamkeenapp\static\js\owl-carousel\AjaxLoader.gif" />
+    <Content Include="tamkeenapp\static\js\owl-carousel\grabbing.png" />
+    <Content Include="tamkeenapp\static\js\owl-carousel\owl.carousel.css" />
+    <Content Include="tamkeenapp\static\js\owl-carousel\owl.carousel.js" />
+    <Content Include="tamkeenapp\static\js\owl-carousel\owl.carousel.min.js" />
+    <Content Include="tamkeenapp\static\js\owl-carousel\owl.theme.css" />
+    <Content Include="tamkeenapp\static\js\owl-carousel\owl.transitions.css" />
+    <Content Include="tamkeenapp\static\js\prettyphoto\css\prettyPhoto.css" />
+    <Content Include="tamkeenapp\static\js\prettyphoto\images\prettyPhoto\dark_rounded\btnNext.png" />
+    <Content Include="tamkeenapp\static\js\prettyphoto\images\prettyPhoto\dark_rounded\btnPrevious.png" />
+    <Content Include="tamkeenapp\static\js\prettyphoto\images\prettyPhoto\dark_rounded\contentPattern.png" />
+    <Content Include="tamkeenapp\static\js\prettyphoto\images\prettyPhoto\dark_rounded\default_thumbnail.gif" />
+    <Content Include="tamkeenapp\static\js\prettyphoto\images\prettyPhoto\dark_rounded\loader.gif" />
+    <Content Include="tamkeenapp\static\js\prettyphoto\images\prettyPhoto\dark_rounded\sprite.png" />
+    <Content Include="tamkeenapp\static\js\prettyphoto\images\prettyPhoto\dark_square\btnNext.png" />
+    <Content Include="tamkeenapp\static\js\prettyphoto\images\prettyPhoto\dark_square\btnPrevious.png" />
+    <Content Include="tamkeenapp\static\js\prettyphoto\images\prettyPhoto\dark_square\contentPattern.png" />
+    <Content Include="tamkeenapp\static\js\prettyphoto\images\prettyPhoto\dark_square\default_thumbnail.gif" />
+    <Content Include="tamkeenapp\static\js\prettyphoto\images\prettyPhoto\dark_square\loader.gif" />
+    <Content Include="tamkeenapp\static\js\prettyphoto\images\prettyPhoto\dark_square\sprite.png" />
+    <Content Include="tamkeenapp\static\js\prettyphoto\images\prettyPhoto\default\default_thumb.png" />
+    <Content Include="tamkeenapp\static\js\prettyphoto\images\prettyPhoto\default\loader.gif" />
+    <Content Include="tamkeenapp\static\js\prettyphoto\images\prettyPhoto\default\sprite.png" />
+    <Content Include="tamkeenapp\static\js\prettyphoto\images\prettyPhoto\default\sprite_next.png" />
+    <Content Include="tamkeenapp\static\js\prettyphoto\images\prettyPhoto\default\sprite_prev.png" />
+    <Content Include="tamkeenapp\static\js\prettyphoto\images\prettyPhoto\default\sprite_x.png" />
+    <Content Include="tamkeenapp\static\js\prettyphoto\images\prettyPhoto\default\sprite_y.png" />
+    <Content Include="tamkeenapp\static\js\prettyphoto\images\prettyPhoto\facebook\btnNext.png" />
+    <Content Include="tamkeenapp\static\js\prettyphoto\images\prettyPhoto\facebook\btnPrevious.png" />
+    <Content Include="tamkeenapp\static\js\prettyphoto\images\prettyPhoto\facebook\contentPatternBottom.png" />
+    <Content Include="tamkeenapp\static\js\prettyphoto\images\prettyPhoto\facebook\contentPatternLeft.png" />
+    <Content Include="tamkeenapp\static\js\prettyphoto\images\prettyPhoto\facebook\contentPatternRight.png" />
+    <Content Include="tamkeenapp\static\js\prettyphoto\images\prettyPhoto\facebook\contentPatternTop.png" />
+    <Content Include="tamkeenapp\static\js\prettyphoto\images\prettyPhoto\facebook\default_thumbnail.gif" />
+    <Content Include="tamkeenapp\static\js\prettyphoto\images\prettyPhoto\facebook\loader.gif" />
+    <Content Include="tamkeenapp\static\js\prettyphoto\images\prettyPhoto\facebook\sprite.png" />
+    <Content Include="tamkeenapp\static\js\prettyphoto\images\prettyPhoto\light_rounded\btnNext.png" />
+    <Content Include="tamkeenapp\static\js\prettyphoto\images\prettyPhoto\light_rounded\btnPrevious.png" />
+    <Content Include="tamkeenapp\static\js\prettyphoto\images\prettyPhoto\light_rounded\default_thumbnail.gif" />
+    <Content Include="tamkeenapp\static\js\prettyphoto\images\prettyPhoto\light_rounded\loader.gif" />
+    <Content Include="tamkeenapp\static\js\prettyphoto\images\prettyPhoto\light_rounded\sprite.png" />
+    <Content Include="tamkeenapp\static\js\prettyphoto\images\prettyPhoto\light_square\btnNext.png" />
+    <Content Include="tamkeenapp\static\js\prettyphoto\images\prettyPhoto\light_square\btnPrevious.png" />
+    <Content Include="tamkeenapp\static\js\prettyphoto\images\prettyPhoto\light_square\default_thumbnail.gif" />
+    <Content Include="tamkeenapp\static\js\prettyphoto\images\prettyPhoto\light_square\loader.gif" />
+    <Content Include="tamkeenapp\static\js\prettyphoto\images\prettyPhoto\light_square\sprite.png" />
+    <Content Include="tamkeenapp\static\js\prettyphoto\js\jquery.prettyPhoto.js" />
+    <Content Include="tamkeenapp\static\js\pulse\img\bg_direction_nav.png" />
+    <Content Include="tamkeenapp\static\js\pulse\img\slider-shadow.png" />
+    <Content Include="tamkeenapp\static\js\pulse\jquery.PMSlider.js" />
+    <Content Include="tamkeenapp\static\js\pulse\jquery.PMSlider.old.js" />
+    <Content Include="tamkeenapp\static\js\pulse\modernizr.custom.js" />
+    <Content Include="tamkeenapp\static\js\pulse\pm-slider.css" />
+    <Content Include="tamkeenapp\static\js\respond.min.js" />
+    <Content Include="tamkeenapp\static\js\responsive-nav\responsive-nav.css" />
+    <Content Include="tamkeenapp\static\js\responsive-nav\responsive-nav.js" />
+    <Content Include="tamkeenapp\static\js\responsive-nav\responsive-nav.min.js" />
+    <Content Include="tamkeenapp\static\js\retina.js" />
+    <Content Include="tamkeenapp\static\js\scrolling-nav.js" />
+    <Content Include="tamkeenapp\static\js\scrollpane\jquery.jscrollpane.css" />
+    <Content Include="tamkeenapp\static\js\scrollpane\jquery.jscrollpane.js" />
+    <Content Include="tamkeenapp\static\js\scrollpane\jquery.jscrollpane.min.js" />
+    <Content Include="tamkeenapp\static\js\scrollpane\jquery.mousewheel.js" />
+    <Content Include="tamkeenapp\static\js\scrollpane\mwheelIntent.js" />
+    <Content Include="tamkeenapp\static\js\stellar\jquery.stellar.js" />
+    <Content Include="tamkeenapp\static\js\stellar\scrollability.js" />
+    <Content Include="tamkeenapp\static\js\superfish\hoverIntent.js" />
+    <Content Include="tamkeenapp\static\js\superfish\superfish.js" />
+    <Content Include="tamkeenapp\static\js\superfish\supersubs.js" />
+    <Content Include="tamkeenapp\static\js\theme-color-selector\theme-color-selector.css" />
+    <Content Include="tamkeenapp\static\js\theme-color-selector\theme-color-selector.js" />
+    <Content Include="tamkeenapp\static\js\tinynav.js" />
+    <Content Include="tamkeenapp\static\js\tinynav.min.js" />
+    <Content Include="tamkeenapp\static\js\webfont.js" />
+    <Content Include="tamkeenapp\static\js\wow\css\libs\animate.css" />
+    <Content Include="tamkeenapp\static\js\wow\css\site.css" />
+    <Content Include="tamkeenapp\static\js\wow\wow.js" />
+    <Content Include="tamkeenapp\static\js\wow\wow.min.js" />
+    <Content Include="tamkeenapp\templates\404.html" />
+    <Content Include="tamkeenapp\templates\base.html" />
+    <Content Include="tamkeenapp\templates\certificates.html" />
+    <Content Include="tamkeenapp\templates\contact_us.html" />
+    <Content Include="tamkeenapp\templates\coursedetails.html" />
+    <Content Include="tamkeenapp\templates\ga.html" />
+    <Content Include="tamkeenapp\templates\home.html" />
+    <Content Include="tamkeenapp\templates\services.html" />
+    <Content Include="tamkeenapp\templates\training.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="static\" />
+    <Folder Include="tamkeenapp\static\" />
+    <Folder Include="tamkeenapp\static\bootstrap3\" />
+    <Folder Include="tamkeenapp\static\bootstrap3\css\" />
+    <Folder Include="tamkeenapp\static\bootstrap3\fonts\" />
+    <Folder Include="tamkeenapp\static\bootstrap3\js\" />
+    <Folder Include="tamkeenapp\static\css\" />
+    <Folder Include="tamkeenapp\static\css\img\" />
+    <Folder Include="tamkeenapp\static\css\superfish\" />
+    <Folder Include="tamkeenapp\static\css\superfish\img\" />
+    <Folder Include="tamkeenapp\static\css\typicons\" />
+    <Folder Include="tamkeenapp\static\fonts\" />
+    <Folder Include="tamkeenapp\static\img\" />
+    <Folder Include="tamkeenapp\static\img\about-us\" />
+    <Folder Include="tamkeenapp\static\img\blog\" />
+    <Folder Include="tamkeenapp\static\img\boxed-bgs\" />
+    <Folder Include="tamkeenapp\static\img\boxed-patterns\" />
+    <Folder Include="tamkeenapp\static\img\home\" />
+    <Folder Include="tamkeenapp\static\img\home\partners\" />
+    <Folder Include="tamkeenapp\static\img\home\testimonials\" />
+    <Folder Include="tamkeenapp\static\img\posts\" />
+    <Folder Include="tamkeenapp\static\img\services\" />
+    <Folder Include="tamkeenapp\static\js\" />
+    <Folder Include="tamkeenapp\static\js\ajax-contact\" />
+    <Folder Include="tamkeenapp\static\js\countdown\" />
+    <Folder Include="tamkeenapp\static\js\easypiechart\" />
+    <Folder Include="tamkeenapp\static\js\flexisel\" />
+    <Folder Include="tamkeenapp\static\js\flexslider\" />
+    <Folder Include="tamkeenapp\static\js\flexslider\img\" />
+    <Folder Include="tamkeenapp\static\js\iris\" />
+    <Folder Include="tamkeenapp\static\js\isotope\" />
+    <Folder Include="tamkeenapp\static\js\jquery-ui\" />
+    <Folder Include="tamkeenapp\static\js\jquery-ui\ui\" />
+    <Folder Include="tamkeenapp\static\js\jquery-ui\ui\i18n\" />
+    <Folder Include="tamkeenapp\static\js\jquery-ui\ui\minified\" />
+    <Folder Include="tamkeenapp\static\js\jquery-ui\ui\minified\i18n\" />
+    <Folder Include="tamkeenapp\static\js\mobilemenu\" />
+    <Folder Include="tamkeenapp\static\js\owl-carousel\" />
+    <Folder Include="tamkeenapp\static\js\prettyphoto\" />
+    <Folder Include="tamkeenapp\static\js\prettyphoto\css\" />
+    <Folder Include="tamkeenapp\static\js\prettyphoto\images\" />
+    <Folder Include="tamkeenapp\static\js\prettyphoto\images\prettyPhoto\" />
+    <Folder Include="tamkeenapp\static\js\prettyphoto\images\prettyPhoto\dark_rounded\" />
+    <Folder Include="tamkeenapp\static\js\prettyphoto\images\prettyPhoto\dark_square\" />
+    <Folder Include="tamkeenapp\static\js\prettyphoto\images\prettyPhoto\default\" />
+    <Folder Include="tamkeenapp\static\js\prettyphoto\images\prettyPhoto\facebook\" />
+    <Folder Include="tamkeenapp\static\js\prettyphoto\images\prettyPhoto\light_rounded\" />
+    <Folder Include="tamkeenapp\static\js\prettyphoto\images\prettyPhoto\light_square\" />
+    <Folder Include="tamkeenapp\static\js\prettyphoto\js\" />
+    <Folder Include="tamkeenapp\static\js\pulse\" />
+    <Folder Include="tamkeenapp\static\js\pulse\img\" />
+    <Folder Include="tamkeenapp\static\js\responsive-nav\" />
+    <Folder Include="tamkeenapp\static\js\scrollpane\" />
+    <Folder Include="tamkeenapp\static\js\stellar\" />
+    <Folder Include="tamkeenapp\static\js\superfish\" />
+    <Folder Include="tamkeenapp\static\js\theme-color-selector\" />
+    <Folder Include="tamkeenapp\static\js\wow\" />
+    <Folder Include="tamkeenapp\static\js\wow\css\" />
+    <Folder Include="tamkeenapp\static\js\wow\css\libs\" />
+    <Folder Include="tamkeenapp\" />
+    <Folder Include="tamkeenapp\templates\" />
+    <Folder Include="TamkeenDjango\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="env\">
+      <Id>{191bacbf-4210-4e87-b10f-e7c929b19379}</Id>
+      <BaseInterpreter>{2af0f10d-7135-4994-9156-5d01c9c11b7e}</BaseInterpreter>
+      <Version>2.7</Version>
+      <Description>env (Python 2.7)</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <LibraryPath>Lib\</LibraryPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X86</Architecture>
+    </Interpreter>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Django.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

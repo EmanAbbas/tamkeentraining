@@ -1,0 +1,1 @@
+web: gunicorn TamkeenDjango.wsgi --log-file -

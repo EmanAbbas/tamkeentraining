@@ -1,0 +1,102 @@
+﻿ {%extends 'base.html' %}
+ <!-- PRESENTATION AREA -->
+{% block content %}
+
+
+{% load static %}
+
+
+  
+
+ 
+  
+ 
+  
+  
+  
+	<div id="pm_layout_wrapper" class="pm-full-mode"><!-- Use wrapper for wide or boxed mode -->
+    
+    	
+                
+        <!-- SUBHEADER AREA -->
+        
+        <div class="pm-sub-header-container pm-parallax-panel" data-stellar-background-ratio="0.5" data-stellar-vertical-offset="95">
+        	
+            <div class="pm-sub-header-breadcrumbs">
+            	<ul class="pm-sub-header-breadcrumbs-ul">
+                	<li><a href="{%url 'home'%}">Home</a></li>
+                   
+                    <li><i class="fa fa-angle-right"></i></li>
+                    <li class="current">{{workshop.title}}</li>
+                </ul>
+            </div>
+            
+            <div class="pm-sub-header-title-container">
+            	<h5>{{workshop.title}}</h5>
+            </div>
+            
+            <div class="pm-sub-header-message">
+            	<p class="smessage">{{workshop.notes}}</p>
+            </div>
+                        
+        </div>
+        
+ 		<!-- SUBHEADER AREA end -->
+        
+        <!-- BODY AREA -->
+        
+        <div class="container pm-containerPadding60">
+        	<div class="row">
+            	
+                <div class="col-lg-12">
+                	
+                    <div class="pm-single-course-post-left-column">
+                    	<i class="fa fa-laptop"></i>
+                    </div>
+                    
+                     <div class="pm-single-course-post-right-column">
+                    	
+                        <p class="pm-single-course-title">{{workshop.title}}</p>
+                        <p class="pm-single-course-sub-title">{{workshop.notes}}</p>
+                        
+                        <p class="pm-single-course-date">{{workshop.start_date}}</p>
+                        
+                        <p class="pm-single-course-price">  {{workshop.hours}} hours </p>
+                         <p class="pm-single-course-sub-title"> Place :{{workshop.place}}</p>
+                        
+                        
+                 <!--       <div class="pm-rounded-btn">
+                            <a href="shopping-cart.html">add course to cart</a>
+                        </div>
+                        
+                        <div class="pm-quantum-alert-message">
+                        	<i class="fa fa-exclamation"></i>
+                            <p class="pm-quantum-alert-title">Learn the basics first</p>
+                            <p class="pm-quantum-alert-details">Be sure to check out the “Core Software Design” workshop. This 1.5 hour workshop provides all the neccessary information you need to familiarize yourself with Software Design.</p>
+                        </div>
+                        --> 
+                    </div>
+                    
+                </div>
+                
+                
+                
+            </div>
+        </div>
+        
+        <!-- BODY AREA end -->
+        
+        
+        
+        
+                
+        
+    
+    </div><!-- /pm_layout-wrapper -->
+{% endblock content %}
+    
+ 
+        
+   
+    
+
